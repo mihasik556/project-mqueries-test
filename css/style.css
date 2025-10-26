@@ -1,0 +1,179 @@
+/* Start Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* End Reset */
+
+/* Start Utility Classes */
+
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #310d63;
+    text-shadow: #000 1px 1px 3px;
+}
+
+/* End Utility Classes */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(#dbd8ff, #949ac7);
+    background-size: cover;
+}
+header {
+    position: sticky;
+    top: 0;
+}
+
+.main-heading {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    background-color: #2e3566;
+    color: aliceblue;
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.nav-bar {
+    display: none;
+    background-color: #c5c6de;
+    padding: 0.5rem 0 0.5rem 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    background-image: linear-gradient(#a9aef4, #b4afe8);
+    padding: 1.5rem;
+    border-radius: 12%;
+    text-align: center;
+    max-width: 21rem;
+    scroll-margin-top: 160px;
+}
+
+.profile-name {
+    padding-bottom: 1rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 1.8rem;
+}
+
+.profile-pic {
+    width: 18rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: #5a5f86 4px double;
+    background-size: contain;
+    margin-bottom: 1rem;
+}
+
+.pic1 {
+    background-image: url("../images/profile1-500x500.png");
+}
+
+.pic2 {
+    background-image: url("../images/profile2-500x500.png");
+}
+
+.pic3 {
+    background-image: url("../images/profile3-500x500.png");
+}
+
+.profile-card p {
+    font-family: cursive;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+}
+
+.footer-text {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    text-align: center;
+    background-color: #2e3566;
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 0.6rem 0 0.6rem 0;
+}
+
+@media screen and (max-width: 1250px) {
+    .container {
+        flex-wrap: wrap;
+        margin: 1.3rem 0 1.3rem 0;
+        gap: 9rem;
+        row-gap: 4rem;
+    }
+
+    .main {
+        padding-bottom: 55px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-heading {
+        font-size: 4rem;
+    }
+
+    .container {
+        row-gap: 4rem;
+        margin-top: 4rem;
+    }
+    .nav-bar {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .profile-card {
+        max-width: 16rem;
+    }
+
+    .profile-pic {
+        width: 13rem;
+    }
+
+    .nav-bar ul {
+        gap: 2rem;
+    }
+}
