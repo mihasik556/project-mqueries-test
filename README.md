@@ -17,13 +17,21 @@ The project is designed for practicing basic web development skills and testing 
 ## Screenshots
 
 - Desktop Version (>1250px)
+
 ![Preview](images/screenshot1.png)
+
 (Profiles in a row, no navbar)
+
 - Tablet Version (768px-1250px)
+
 ![Preview](images/screenshot2.png)
+
 (Profiles in wrap, with spacing)
+
 - Mobile Version (<768px)
+
 ![Preview](images/screenshot3.png)
+
 (Vertical stack, visible navbar for navigation)
 
 ## Installation
